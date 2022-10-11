@@ -6,13 +6,17 @@ function App() {
   return (
     <div class={styles.App}>
       <header class={styles.header}>
-        <div>
-          <img src={logo} class={styles.logo} alt="logo" />
-          <p>hello my friend</p>
-          <div>
-            <Timer />
+        <section className="flex justify-between">
+          <div >
+            <p class="text-3xl pb-10 font-bold text-blue-500">
+              hello my friend <br /> it's learning solidjs
+            </p>
+            <img src={logo} class={styles.logo} alt="logo" />
           </div>
-        </div>
+          <components>
+            <Timer />
+          </components>
+        </section>
       </header>
     </div>
   );
