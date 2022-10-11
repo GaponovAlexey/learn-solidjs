@@ -5,6 +5,7 @@ import SimpleTodo from "./components/SimpleTodo";
 import SimpleRouter from "./components/SimpleRouter";
 import CountPage from "./components/CountPage";
 import { CounterProvider } from "./components/StoreCounter";
+import Async from "./components/Async";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <CountPage />
               <SimpleTodo />
               <SimpleRouter />
+              <Async />
             </components>
           </section>
         </header>
