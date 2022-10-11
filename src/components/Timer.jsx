@@ -5,7 +5,7 @@ const Timer = () => {
     timer = setInterval(() => setCount((c) => c + 1), 1000);
   onCleanup(() => clearInterval(timer));
 
-  return <div>Counter: {count}</div>;
+  return <div>Timer - 1s: {count}</div>;
 };
 
 export default Timer;
