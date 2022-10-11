@@ -13,6 +13,8 @@ const SimpleTodo = () => {
 
   const [newTitle, setTitle] = createSignal("");
   const [todos, setTodos] = createLocalStore([]);
+  console.log(todos)
+  
 
   const addTodo = (e) => {
     e.preventDefault();
@@ -37,7 +39,7 @@ const SimpleTodo = () => {
       </form>
       <For each={todos}>
         {(todo, i) => (
-          <div className="text-black" >
+          <div className="text-black">
             <input
               type="checkbox"
               checked={todo.done}
@@ -49,7 +51,7 @@ const SimpleTodo = () => {
               onChange={(e) => setTodos(i(), "title", e.currentTarget.value)}
             />
             <button
-            className="text-red-300"
+              className="text-red-500"
               onClick={() =>
                 setTodos((t) => [...t.slice(0, i()), ...t.slice(i() + 1)])
               }

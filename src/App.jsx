@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import styles from "./App.module.css";
 import Timer from "./components/Timer";
 import SimpleTodo from "./components/SimpleTodo";
+import SimpleRouter from "./components/SimpleRouter";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <components>
             <Timer />
             <SimpleTodo />
+            <SimpleRouter />
           </components>
         </section>
       </header>
