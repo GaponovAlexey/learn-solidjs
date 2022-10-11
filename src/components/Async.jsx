@@ -6,7 +6,7 @@ const fetchUser = async (id) =>
 const Async = () => {
   const [userId, setUserId] = createSignal(),
     [user] = createResource(userId, fetchUser);
-  console.log("user",JSON.stringify(user(), null, 2));
+  console.log("user",user.apply());
 
   return (
     <>
