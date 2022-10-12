@@ -4,10 +4,10 @@ import { A } from "@solidjs/router";
 
 export const LinkPage = () => {
   return (
-    <div>
-      <A href="/users">users</A>
+    <div className="text-blue-400">
+      <A href="/users">/users</A>
       <br />
-      <A href="/about">about</A>
+      <A href="/about">/about</A>
     </div>
   );
 };
