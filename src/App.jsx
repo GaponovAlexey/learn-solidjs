@@ -1,14 +1,17 @@
-import { A, Route, Routes } from "@solidjs/router";
+import { Route, Routes } from "@solidjs/router";
 import styles from "./App.module.css";
 import Async from "./components/Async";
 import CountPage from "./components/CountPage";
-import HomeTest from "./components/HomeTest";
+import HomeTest, { LinkPage } from "./components/HomeTest";
 import SimpleRouter from "./components/SimpleRouter";
 import SimpleTodo from "./components/SimpleTodo";
 import { CounterProvider } from "./components/StoreCounter";
 import Timer from "./components/Timer";
 import logo from "./logo.svg";
 function App() {
+
+
+  
   return (
     <CounterProvider count={7}>
       <div class={styles.App}>
@@ -26,15 +29,13 @@ function App() {
               <SimpleTodo />
               <SimpleRouter />
               <Async />
+              <LinkPage />
             </components>
             <div>
               <Routes>
                 <Route path="/users" element={<div>Userss!</div>} />
                 <Route path="/about" element={HomeTest} />
               </Routes>
-                <A href="/users">users</A>
-              <br/>
-                <A href="/about">about</A>
             </div>
           </section>
         </header>
