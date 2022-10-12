@@ -1,6 +1,7 @@
 import { Route, Routes } from "@solidjs/router";
 import styles from "./App.module.css";
 import Async from "./components/Async";
+import { Bench } from "./components/Bench";
 import CountPage from "./components/CountPage";
 import HomeTest, { LinkPage } from "./components/HomeTest";
 import SimpleRouter from "./components/SimpleRouter";
@@ -41,6 +42,10 @@ function App() {
             <div>
               <TodoApp />
             </div>
+              <div>
+              <Bench />
+              </div>
+                
           </section>
         </header>
       </div>
