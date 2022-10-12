@@ -14,7 +14,7 @@ export const LinkPage = () => {
 
 
 const HomeTest = () => {
-  return <div>About321</div>;
+  return <div className="min-h-[100%] bg-sky-800">About-page</div>;
 };
 
 export default HomeTest;

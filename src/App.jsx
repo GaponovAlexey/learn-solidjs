@@ -7,11 +7,12 @@ import SimpleRouter from "./components/SimpleRouter";
 import SimpleTodo from "./components/SimpleTodo";
 import { CounterProvider } from "./components/StoreCounter";
 import Timer from "./components/Timer";
+import { TodoApp } from "./components/TodoMV";
 import logo from "./logo.svg";
 function App() {
 
 
-  
+
   return (
     <CounterProvider count={7}>
       <div class={styles.App}>
@@ -33,9 +34,12 @@ function App() {
             </components>
             <div>
               <Routes>
-                <Route path="/users" element={<div>Userss!</div>} />
+                <Route path="/users" element={<div className="min-h-[100%] bg-green-800">Userss!</div>} />
                 <Route path="/about" element={HomeTest} />
               </Routes>
+            </div>
+            <div>
+              <TodoApp />
             </div>
           </section>
         </header>
