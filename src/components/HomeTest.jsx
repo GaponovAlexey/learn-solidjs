@@ -1,5 +1,5 @@
 const HomeTest = () => {
-  return <div children="fixed">HOme</div>;
+  return <div children="fixed">Home</div>;
 };
 
 export default HomeTest;
