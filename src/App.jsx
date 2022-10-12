@@ -29,9 +29,12 @@ function App() {
             </components>
             <div>
               <Routes>
-                <Route path="/users" component={HomeTest}>link</Route>
+                <Route path="/users" element={<div>Userss!</div>} />
+                <Route path="/about" element={HomeTest} />
               </Routes>
                 <A href="/users">users</A>
+              <br/>
+                <A href="/about">about</A>
             </div>
           </section>
         </header>
